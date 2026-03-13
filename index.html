@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>9块9挑战100杯雪碧茶</title>
+    <meta
+      name="description"
+      content="9块9挑战100杯雪碧茶，冲击全球牛碧之王。手机 H5 活动游戏页。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__glow hero__glow--left"></div>
+        <div class="hero__glow hero__glow--right"></div>
+        <div class="hero__content">
+          <p class="eyebrow">XUFUNIU SPRITE TEA CHALLENGE</p>
+          <h1>9块9，挑战100杯雪碧茶</h1>
+          <p class="hero__subtitle">谁是全球牛碧之王？手机打开，立即开冲。</p>
+          <div class="hero__stats">
+            <div class="chip">
+              <span class="chip__label">活动时间</span>
+              <strong>2026.04.01 - 2026.06.01</strong>
+            </div>
+            <div class="chip">
+              <span class="chip__label">参与门槛</span>
+              <strong>9.9元 Plus 月卡</strong>
+            </div>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#game">开始挑战</a>
+            <a class="button button--ghost" href="#tracks">查看玩法</a>
+          </div>
+        </div>
+        <div class="hero__phone">
+          <div class="phone-card">
+            <div class="phone-card__badge">全球仅 3 名</div>
+            <div class="cup-stack">
+              <span class="cup cup--1"></span>
+              <span class="cup cup--2"></span>
+              <span class="cup cup--3"></span>
+            </div>
+            <div class="phone-card__meta">
+              <p>百杯挑战</p>
+              <strong>最快完成 100 杯核销即登榜</strong>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section intro">
+          <div class="intro__panel">
+            <p class="section-kicker">活动概览</p>
+            <h2>一张月卡，两条赛道，冲榜就有机会拿大奖</h2>
+            <p>
+              用户支付 9.9 元开通牛碧 Plus 月卡后，即可参与挑战。月卡开通后 30
+              天内有效，最多可领取 100 杯雪碧茶，每人每日限领 4 杯，仅限堂食。
+            </p>
+          </div>
+          <div class="intro__grid">
+            <article class="fact-card">
+              <span class="fact-card__index">01</span>
+              <h3>100 杯上限</h3>
+              <p>按每日满额 4 杯计算，25 次到店即可完成百杯挑战。</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-card__index">02</span>
+              <h3>双赛道并行</h3>
+              <p>既能冲最快百杯，也能冲堂食消费榜，活动玩法更有参与感。</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-card__index">03</span>
+              <h3>手机 H5 友好</h3>
+              <p>单页结构、按钮大、动效轻，适合分享页或活动落地页直接打开。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section tracks" id="tracks">
+          <div class="section-heading">
+            <p class="section-kicker">两大赛道</p>
+            <h2>牛碧之王 vs 牛碧财神</h2>
+          </div>
+          <div class="track-grid">
+            <article class="track-card track-card--king">
+              <div class="track-card__top">
+                <span class="track-card__tag">百杯挑战</span>
+                <strong>全球仅 3 名</strong>
+              </div>
+              <h3>牛碧之王赛道</h3>
+              <p>持有 9.9 元牛碧 Plus 月卡，并在活动期间完成 100 杯雪碧茶核销。</p>
+              <ul class="track-card__list">
+                <li>按第 100 杯核销时间排名，越早越靠前。</li>
+                <li>前 3 名获得“全球牛碧之王”称号。</li>
+                <li>奖励含霸王卡、雪碧茶卡、礼盒、证书与周边。</li>
+              </ul>
+            </article>
+            <article class="track-card track-card--fortune">
+              <div class="track-card__top">
+                <span class="track-card__tag">消费王</span>
+                <strong>TOP 5</strong>
+              </div>
+              <h3>牛碧财神赛道</h3>
+              <p>持有月卡，活动期间按小程序会员 ID 统计堂食消费金额，排名前五获奖。</p>
+              <ul class="track-card__list">
+                <li>统计周期：2026 年 4 月 1 日至 6 月 1 日。</li>
+                <li>第 1 视觉锤是 1000 元现金奖励。</li>
+                <li>同一用户双重达标时，仅保留牛碧之王奖励。</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section game" id="game">
+          <div class="section-heading">
+            <p class="section-kicker">互动挑战</p>
+            <h2>30 秒极速冲杯，看看你能多快冲到 100</h2>
+          </div>
+
+          <div class="game-card">
+            <div class="game-card__hud">
+              <div class="hud-item">
+                <span>当前杯数</span>
+                <strong><span id="cupCount">0</span> / 100</strong>
+              </div>
+              <div class="hud-item">
+                <span>剩余时间</span>
+                <strong><span id="timeLeft">30.0</span>s</strong>
+              </div>
+              <div class="hud-item">
+                <span>当前连击</span>
+                <strong><span id="comboCount">0</span>x</strong>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress__bar" id="progressBar"></div>
+            </div>
+
+            <div class="arena" id="tapArena">
+              <div class="arena__rings"></div>
+              <button class="tap-target" id="tapTarget" type="button">
+                <span class="tap-target__label">猛点冲杯</span>
+                <span class="tap-target__cup">雪碧茶</span>
+              </button>
+              <div class="bonus" id="bonusBubble" hidden>财神暴击 +5</div>
+            </div>
+
+            <div class="game-card__actions">
+              <button class="button button--primary" id="startGame" type="button">
+                开始 30 秒挑战
+              </button>
+              <button class="button button--ghost" id="resetGame" type="button">
+                重置
+              </button>
+            </div>
+
+            <div class="result-card" id="resultCard" hidden>
+              <p class="result-card__kicker">挑战结果</p>
+              <h3 id="resultTitle">你已冲上榜单</h3>
+              <p id="resultText"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section rewards">
+          <div class="section-heading">
+            <p class="section-kicker">奖励亮点</p>
+            <h2>奖品要够炸，活动才够有记忆点</h2>
+          </div>
+          <div class="reward-grid">
+            <article class="reward-card">
+              <h3>牛碧之王奖励</h3>
+              <p>霸王卡、雪碧茶卡、荣誉证书、专属英雄海报、Family 礼盒、见面会门票、官方周边。</p>
+            </article>
+            <article class="reward-card">
+              <h3>牛碧财神奖励</h3>
+              <p>1000 元现金、霸王卡、雪碧茶卡、荣誉证书、Family 礼盒、官方周边。</p>
+            </article>
+            <article class="reward-card reward-card--accent">
+              <h3>传播建议</h3>
+              <p>首页主打“9块9 + 100 杯 + 全球仅 3 名”，游戏区放中段，底部承接规则与报名按钮。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section rules">
+          <div class="section-heading">
+            <p class="section-kicker">活动规则</p>
+            <h2>官方信息整理</h2>
+          </div>
+          <div class="rules-card">
+            <ul>
+              <li>9.9 元开通牛碧 Plus 月卡后即可参与，月卡有效期 30 天。</li>
+              <li>每位用户最多领取 100 杯雪碧茶，每日限领 4 杯，仅限堂食。</li>
+              <li>牛碧之王按第 100 杯核销时间排序，前 3 名获奖。</li>
+              <li>牛碧财神按活动期间堂食消费金额 TOP5 排名。</li>
+              <li>同一用户若同时满足两类奖项条件，仅保留牛碧之王奖励。</li>
+              <li>活动数据以官方后台统计为准，最终解释权归品牌方所有。</li>
+            </ul>
+            <a class="button button--primary button--full" href="javascript:void(0)">立即开通 9.9 月卡</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
